@@ -1,0 +1,347 @@
+/* Registration Form CSS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}  */
+/* body {
+  background: seashell;
+} */
+
+.con {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.contained {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contained .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.contained .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+input #edit-btn {
+  margin-top: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+form .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 45px;
+  margin: 35px 0;
+}
+
+form .buttons input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .buttons input:hover {
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+@media (max-width: 584px) {
+  .contained {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media (max-width: 459px) {
+  .contained .content .category {
+    flex-direction: column;
+  }
+}
+
+/*Bootstrap panel CSS */
+
+.containerpub {
+  border: 2px solid;
+  padding: 0;
+  margin-bottom: 3px;
+}
+
+.heading {
+  background: #40407b;
+  color: white;
+  text-align: center;
+}
+
+.outer-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  width: 33%;
+  border: 2px solid;
+  margin: 0px 1px 1.3rem 1px;
+  align-items: center;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+/* .btn {
+  border-radius: 20px;
+  font-weight: 500;
+} */
+
+/* panel Page CSS */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.card-container {
+  margin-top: 5px;
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-container .card {
+  /* border: 2px solid; */
+  /* background: yellow; */
+  width: 33%;
+  height: 100%;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.card-container .card .heading {
+  /* border: 3px solid #d4dfe3; */
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  background: #292952;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.card-container .card .price {
+  text-align: center;
+  margin: 1rem 0 0.1rem 0;
+  width: 100%;
+}
+.card-container .card .price .price1 {
+  color: red;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.card-container .card .price .price2 {
+  color: green;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.card-container .card .card-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 90%;
+}
+.card-container .card .card-header .card-title {
+  background: #243a5e;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.card-container .card .card-header .card-body {
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+  top: 2%;
+  bottom: 2%;
+}
+
+.card-container .card .card-header .card-body .date {
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-container .card .card-header .card-body .buttondiv {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button.btn.btn-success.btn-sm {
+  width: 40%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 45px;
+}
+
+/* width: 27%;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px; */
+
+/* popup css */
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 95%;
+  max-width: 500px;
+  height: fit-content;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.popup .close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  /* background: #222; */
+  color: #222;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup .content .btn {
+  /* margin-bottom: 0px; */
+  border-radius: 15px;
+  width: 20%;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1.5);
+}
